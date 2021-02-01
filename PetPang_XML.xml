@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="PetPang_XSL.xsl"?>
+<Companion_Animal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PetPang_Schema.xsd">
+  <animal animal_species="dog">
+    <Food>
+      <name>
+        <image src="dog_food1.jpg">dog_food1.jpg</image>
+        <description>네츄럴코어 에코2 오리고기 작은입자 사료 2kg</description>
+        <price>16,710원</price>
+      </name>
+      <name>
+        <image src="dog_food2.jpg">dog_food2.jpg</image>
+        <description>나우(NOW) 그레인프리 스몰브리드 어덜트 사료 2.72kg</description>
+        <price>44,400원</price>
+      </name>
+      <name>
+        <image src="dog_food3.jpg">dog_food3.jpg</image>
+        <description>네츄럴코어 베네엠32 사료 7.2kg</description>
+        <price>39,780원</price>
+      </name>
+      <name>
+        <image src="dog_food4.jpg">dog_food4.jpg</image>
+        <description>카길 강아지 사료 건강백서 애견사료 말티즈 2kg</description>
+        <price>21,920원</price>
+      </name>
+      <name>
+        <image src="dog_food5.jpg">dog_food5.jpg</image>
+        <description>카길 강아지 사료 울트라 액티브 15kg</description>
+        <price>23,530원</price>
+      </name>
+      <name>
+        <image src="dog_food6.jpg">dog_food6.jpg</image>
+        <description>도그랑 패밀리 성견용 사료 8kg</description>
+        <price>10,550원</price>
+      </name>
+    </Food>
+    <Snack>
+      <name>
+        <image src="dog_snack1.jpg">dog_snack1.jpg</image>
+        <description>굿프랜드 미니연어큐브 60g</description>
+        <price>1,100원</price>
+      </name>
+      <name>
+        <image src="dog_snack2.jpg">dog_snack2.jpg</image>
+        <description>퍼피프랜드 닭고기캔 100g</description>
+        <price>600원</price>
+      </name>
+      <name>
+        <image src="dog_snack3.jpg">dog_snack3.jpg</image>
+        <description>굿프랜드 우유껌 30P</description>
+        <price>4,180원</price>
+      </name>
+      <name>
+        <image src="dog_snack4.jpg">dog_snack4.jpg</image>
+        <description>헬로도기 소고기 소시지 8P</description>
+        <price>1,030원</price>
+      </name>
+      <name>
+        <image src="dog_snack5.jpg">dog_snack5.jpg</image>
+        <description>베게브랜드 생선껌 25P</description>
+        <price>3,080원</price>
+      </name>
+      <name>
+        <image src="dog_snack6.jpg">dog_snack6.jpg</image>
+        <description>브런치 닭고기 30g</description>
+        <price>300원</price>
+      </name>
+    </Snack>
+    <Else>
+      <name>
+        <image src="dog_else1.jpg">dog_else1.jpg</image>
+        <description>마더스독 포그니 샴푸 베이비파우더향 500ml</description>
+        <price>15,200원</price>
+      </name>
+      <name>
+        <image src="dog_else2.jpg">dog_else2.jpg</image>
+        <description>허니스마일 발톱깎이 S</description>
+        <price>5,550원</price>
+      </name>
+      <name>
+        <image src="dog_else3.jpg">dog_else3.jpg</image>
+        <description>그린백 강아지 배변봉투 리필 4롤</description>
+        <price>2,310원</price>
+      </name>
+      <name>
+        <image src="dog_else4.jpg">dog_else4.jpg</image>
+        <description>도기맨 IQ 스낵볼 장난감 S</description>
+        <price>4,630원</price>
+      </name>
+      <name>
+        <image src="dog_else5.jpg">dog_else5.jpg</image>
+        <description>쏘아베 애견 라텍스장난감 동물농장(랜덤발송)</description>
+        <price>1,850원</price>
+      </name>
+      <name>
+        <image src="dog_else6.jpg">dog_else6.jpg</image>
+        <description>반려동물 멀티 휴대용 급수 급식 물병</description>
+        <price>4,430원</price>
+      </name>
+    </Else>
+  </animal>
+  <animal animal_species="cat">
+    <Food>
+      <name>
+        <image src="cat_food1.jpg">cat_food1.jpg</image>
+        <description>이즈칸 캣 그레인프리 어덜트 6.5kg</description>
+        <price>35,200원</price>
+      </name>
+      <name>
+        <image src="cat_food2.jpg">cat_food2.jpg</image>
+        <description>New 캐츠와 키튼 8kg</description>
+        <price>24,200원</price>
+      </name>
+      <name>
+        <image src="cat_food3.jpg">cat_food3.jpg</image>
+        <description>오리젠 캣앤키튼 5.4kg</description>
+        <price>78,800원</price>
+      </name>
+      <name>
+        <image src="cat_food4.jpg">cat_food4.jpg</image>
+        <description>프로베스트 캣 15kg</description>
+        <price>36,400원</price>
+      </name>
+      <name>
+        <image src="cat_food5.jpg">cat_food5.jpg</image>
+        <description>퓨어비타 그레인프리 치킨 3kg</description>
+        <price>28,800원</price>
+      </name>
+      <name>
+        <image src="cat_food6.jpg">cat_food6.jpg</image>
+        <description>웰니스 코어 그레인프리 인도어 2.26kg</description>
+        <price>36,800원</price>
+      </name>
+    </Food>
+    <Snack>
+      <name>
+        <image src="cat_snack1.jpg">cat_snack1.jpg</image>
+        <description>한줌의 간식 100% REAL 동결건조 연어 25g</description>
+        <price>2,200원</price>
+      </name>
+      <name>
+        <image src="cat_snack2.jpg">cat_snack2.jpg</image>
+        <description>아스쿠 후루루 게맛살 슬라이스 30g</description>
+        <price>2,600원</price>
+      </name>
+      <name>
+        <image src="cat_snack3.jpg">cat_snack3.jpg</image>
+        <description>아스쿠 헬시미요 캣스틱 가다랑어 20g</description>
+        <price>850원</price>
+      </name>
+      <name>
+        <image src="cat_snack4.jpg">cat_snack4.jpg</image>
+        <description>퓨리나 프리스키 파티믹스 트릿 비치사이드 참치 60g</description>
+        <price>3,300원</price>
+      </name>
+      <name>
+        <image src="cat_snack5.jpg">cat_snack5.jpg</image>
+        <description>고집 치킨맛 60g</description>
+        <price>1,500원</price>
+      </name>
+      <name>
+        <image src="cat_snack6.jpg">cat_snack6.jpg</image>
+        <description>네츄럴코어 메리츄 오메가3+참치 14g 4개입</description>
+        <price>2,400원</price>
+      </name>
+    </Snack>
+    <Else>
+      <name>
+        <image src="cat_else1.jpg">cat_else1.jpg</image>
+        <description>부들부들 에코랜드 제너럴 샴푸&amp;린스 500ml</description>
+        <price>6,400원</price>
+      </name>
+      <name>
+        <image src="cat_else2.jpg">cat_else2.jpg</image>
+        <description>펫모닝 플라잉캣 꿩 깃털 낚싯대</description>
+        <price>3,800원</price>
+      </name>
+      <name>
+        <image src="cat_else3.jpg">cat_else3.jpg</image>
+        <description>두부랑캣츠 이코노미 오리지날 7L</description>
+        <price>6,000원</price>
+      </name>
+      <name>
+        <image src="cat_else4.jpg">cat_else4.jpg</image>
+        <description>펫모닝 스크래쳐 포스트</description>
+        <price>12,900원</price>
+      </name>
+      <name>
+        <image src="cat_else5.jpg">cat_else5.jpg</image>
+        <description>고양이 애플 정수기 1.5L</description>
+        <price>27,800원</price>
+      </name>
+      <name>
+        <image src="cat_else6.jpg">cat_else6.jpg</image>
+        <description>푸르미 이동장 FC2000 브라운</description>
+        <price>16,500원</price>
+      </name>
+    </Else>
+  </animal>
+  <animal animal_species="etc">
+    <Food>
+      <name>
+        <image src="etc_food1.jpg">etc_food1.jpg</image>
+        <description>하루두끼 프리미엄 고슴도치 전용사료</description>
+        <price>12,000원</price>
+      </name>
+      <name>
+        <image src="etc_food2.jpg">etc_food2.jpg</image>
+        <description>하이 프리미엄 고슴도치 전용사료 600g</description>
+        <price>12,000원</price>
+      </name>
+      <name>
+        <image src="etc_food3.jpg">etc_food3.jpg</image>
+        <description>네츄럴 포뮬러 고슴도치 전용사료 600g</description>
+        <price>13,000원</price>
+      </name>
+      <name>
+        <image src="etc_food4.jpg">etc_food4.jpg</image>
+        <description>제네시스 기니피그 사료 1kg</description>
+        <price>9,500원</price>
+      </name>
+      <name>
+        <image src="etc_food5.jpg">etc_food5.jpg</image>
+        <description>PSP 건강혼합사료 햄스터/다람쥐/기니피그사료 600g</description>
+        <price>1,900원</price>
+      </name>
+      <name>
+        <image src="etc_food6.jpg">etc_food6.jpg</image>
+        <description>쥬프림 프리미엄 기니피그 티모시 펠렛 2.26kg</description>
+        <price>12,000원</price>
+      </name>
+    </Food>
+    <Snack>
+      <name>
+        <image src="etc_snack1.jpg">etc_snack1.jpg</image>
+        <description>마루칸 쁘띠두부</description>
+        <price>4,300원</price>
+      </name>
+      <name>
+        <image src="etc_snack2.jpg">etc_snack2.jpg</image>
+        <description>무염 수제국수 50g(당근, 단호박, 자색고구마)</description>
+        <price>1,500원</price>
+      </name>
+      <name>
+        <image src="etc_snack3.jpg">etc_snack3.jpg</image>
+        <description>이갈이 건조사탕수수 20g</description>
+        <price>1,800원</price>
+      </name>
+      <name>
+        <image src="etc_snack4.jpg">etc_snack4.jpg</image>
+        <description>산코 아쿠아젤리</description>
+        <price>800원</price>
+      </name>
+      <name>
+        <image src="etc_snack5.jpg">etc_snack5.jpg</image>
+        <description>비타폴 아이스크림콘 런치</description>
+        <price>2,800원</price>
+      </name>
+      <name>
+        <image src="etc_snack6.jpg">etc_snack6.jpg</image>
+        <description>비타폴 비타허브 파스타 과일 쿠킹</description>
+        <price>8,500원</price>
+      </name>
+    </Snack>
+    <Else>
+      <name>
+        <image src="etc_else1.jpg">etc_else1.jpg</image>
+        <description>룹통 베타하우스 아크릴</description>
+        <price>6,000원</price>
+      </name>
+      <name>
+        <image src="etc_else2.jpg">etc_else2.jpg</image>
+        <description>리컴 일체어항 XT-360</description>
+        <price>8,5000원</price>
+      </name>
+      <name>
+        <image src="etc_else3.jpg">etc_else3.jpg</image>
+        <description>리글라스 20큐브</description>
+        <price>20,000원</price>
+      </name>
+      <name>
+        <image src="etc_else4.jpg">etc_else4.jpg</image>
+        <description>튐방지 8칸 바닥모이통</description>
+        <price>2,200원</price>
+      </name>
+      <name>
+        <image src="etc_else5.jpg">etc_else5.jpg</image>
+        <description>등나무공_소 1PCS</description>
+        <price>500원</price>
+      </name>
+      <name>
+        <image src="etc_else6.jpg">etc_else6.jpg</image>
+        <description>훈련용 탁상횟대 - 소</description>
+        <price>25,000원</price>
+      </name>
+    </Else>
+  </animal>
+</Companion_Animal>
