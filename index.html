@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="common.css"/>
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css"/>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script> 
+  </head> 
+  <body> 
+    <div data-role="page" id="page" data-theme="b">
+      <div data-role="header" data-position="fixed" id="header">
+          <h1 id="title" style="font-family: 양진체;">Pocket Movie <img src="slate.png" width="40px;"></h1>
+      </div>
+      <div data-role="main" class="ui-content" id="main" id="list">
+          <ul data-role="listview" id="listview" data-inset="true" id="list" style="box-shadow: none; padding-top: 20px;">
+            <li><a href="history.html" rel="external" class="ui-nodisc-icon" id="list" style="padding: 16px 16px;">영화의 역사</a></li> 
+            <li><a href="ranking.html" rel="external" class="ui-nodisc-icon" id="list" style="padding: 16px 16px;">상영 영화</a></li> 
+            <li><a href="category.html" rel="external" class="ui-nodisc-icon" id="list" style="padding: 16px 16px;">장르별 영화</a></li> 
+            <li><a href="director.html" rel="external" class="ui-nodisc-icon" id="list" style="padding: 16px 16px;">감독별 영화</a></li> 
+          </ul> 
+      </div> 
+      <div data-role="footer" data-position="fixed" id="nav"> 
+          <div data-role="navbar" data-type="horizontal">
+            <ul>
+              <li><a href="http://www.cgv.co.kr/ticket/" data-icon="calendar" class="ui-nodisc-icon" id="nav">예매</a></li>
+              <li><a href="index" rel="external" data-icon="home" class="ui-nodisc-icon" id="nav">홈</a></li>
+              <li><a href="archives.html" rel="external" data-icon="edit" class="ui-nodisc-icon" id="nav">기록</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="common.css" rel="stylesheet" type="text/css">
+    <link href="director.css" rel="stylesheet" type="text/css">    
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css"/>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+  </head> 
+  <body> 
+    <div data-role="page" id="page" data-theme="b" style="background: url(in.jpg); background-size:cover;">
+      <div data-role="header" data-position="fixed" id="header">
+          <h1 id="title">감독별 영화</h1>
+      </div>
+      <div data-role="main" class="ui-content" id="main">
+        <ul data-role="listview" data-inset="true" style="box-shadow: none; padding-top: 20px;">
+          <li><a href="#page1" rel="external" class="ui-nodisc-icon" id="list" style="padding: 16px 16px;">스티븐 스필버그</a></li> 
+          <li><a href="#page2" rel="external" class="ui-nodisc-icon" id="list" style="padding: 16px 16px;">마이클 베이</a></li> 
+          <li><a href="#page3" rel="external" class="ui-nodisc-icon" id="list" style="padding: 16px 16px;">제임스 카메론</a></li>
+          <li><a href="#page4" rel="external" class="ui-nodisc-icon" id="list" style="padding: 16px 16px;">크리스토퍼 놀란</a></li> 
+          <li><a href="#page5" rel="external" class="ui-nodisc-icon" id="list" style="padding: 16px 16px;">미야자키 하야오</a></li>
+        </ul> 
+      </div> 
+      <div data-role="footer" data-position="fixed" id="nav">
+        <div data-role="navbar" data-type="horizontal" style="text-align: center">
+          <ul>
+            <li><a href="http://www.cgv.co.kr/ticket/" data-icon="calendar" class="ui-nodisc-icon" id="nav">예매</a></li>
+            <li><a href="index.html" rel="external" data-icon="home" class="ui-nodisc-icon" id="nav">홈</a></li>
+            <li><a href="archives.html" rel="external" data-icon="edit" class="ui-nodisc-icon" id="nav">기록</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+    
+    <div id="page1" data-role="page" data-theme="b">
+      <div data-role="main" class="ui-content" id="bgStyle" 
+        style="background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,0.5)), url(Spielberg.jpg);
+        background-size: cover;">
+          <h1 class="dName">Steven<br>Spielberg</h1>
+          <p>할리우드와 블록버스터 영화를 대표하는 거장이다. 
+            2018년, 레디 플레이어 원의 흥행으로 지금껏 감독한 영화들의 박스오피스 총수익이 100억 달러를 넘긴 최초의 영화감독이 되었다. </p>
+          <h2>- 대표작 -</h2>
+          <div class="movieList">
+            <div class="mPoster">
+              <img src="sp1.jpg" style="width:100%;">
+            </div>
+            <div class="mEx">
+              <h3>죠스</h3>
+              <p>개봉 : 1978.04.22.</p>
+              <p>장르 : 공포</p>
+              <p>출연 : 로이 샤이더, 로버트 쇼, 리처드 드레이퓨스</p>
+            </div>
+          </div>
+          <div class="movieList">
+            <div class="mPoster">
+              <img src="sp2.jpeg" style="width:100%;">
+            </div>
+            <div class="mEx">
+              <h3>E.T.</h3>
+              <p>개봉 : 1982.06.11.</p>
+              <p>장르 : SF</p>
+              <p>출연 : 헨리 토마스, 드류 베리모어, 로버트 맥노튼</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div id="page2" data-role="page" data-theme="b">
+      <div data-role="main" class="ui-content" id="bgStyle" 
+      style="background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,0.5)), url(bay.png); 
+      background-size: cover;">
+        <h1 class="dName">Michael<br>Bay</h1>
+        <p>액션과 폭발이 끊이지 않는 전형적인 할리우드식 액션 블록버스터를 만드는 대표적인 흥행감독이다. 
+          미국 기준, 현재 영화감독들 중 전체 흥행 2위며, 같은 프랜차이즈 영화를 연속 5편 연출한 최초의 감독이자 유일한 감독이다.</p>
+        <h2>- 대표작 -</h2>
+        <div class="movieList">
+          <div class="mPoster">
+            <img src="bay1.jpeg" style="width:100%;">
+          </div>
+          <div class="mEx">
+            <h3>나쁜 녀석들</h3>
+            <p>개봉 : 1998.04.07.</p>
+            <p>장르 : 액션</p>
+            <p>출연 : 마틴 로렌스, 윌 스미스, 테아 레오니</p>
+          </div>
+        </div>
+        <div class="movieList">
+          <div class="mPoster">
+            <img src="bay2.jpeg" style="width:100%;">
+          </div>
+          <div class="mEx">
+            <h3>트랜스포머</h3>
+            <p>개봉 : 2007.06.12.</p>
+            <p>장르 : SF</p>
+            <p>출연 : 샤이아 라보프, 메간 폭스, 조시 더하멜</p>
+          </div>
+        </div>
+      </div>
+    </div>   
+
+    <div id="page3" data-role="page" data-theme="b">
+      <div data-role="main" class="ui-content" id="bgStyle" 
+      style="background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,0.5)), url(james.jpeg); 
+      background-size: cover;">
+        <h1 class="dName">James<br>Cameron</h1>
+        <p>블록버스터 3대 거장 중 한 명이라 불리며, 역대 세계 흥행 순위 1위 영화인 아바타, 3위인 타이타닉(재개봉 포함)을 만든 세계 최고의 흥행 감독이다.  
+          로운 기술과 SF적 상상력을 바탕으로 한 영상에 완성도 높은 고전적인 이야기를 합쳐, 자신만의 독자적인 영역을 개척하였다.</p>
+        <h2>- 대표작 -</h2>
+        <div class="movieList">
+          <div class="mPoster">
+            <img src="james1.jpeg" style="width:100%;">
+          </div>
+          <div class="mEx">
+            <h3>타이타닉</h3>
+            <p>개봉 : 1997.12.19.</p>
+            <p>장르 : 로맨스</p>
+            <p>출연 : 레오나르도 디카프리오, 케이트 윈슬렛</p>
+          </div>
+        </div>
+        <div class="movieList">
+          <div class="mPoster">
+            <img src="james2.jpeg" style="width:100%;">
+          </div>
+          <div class="mEx">
+            <h3>아바타</h3>
+            <p>개봉 : 2009.12.18.</p>
+            <p>장르 : SF</p>
+            <p>출연 : 샘 워딩턴, 조 샐다나</p>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <div id="page4" data-role="page" data-theme="b">
+      <div data-role="main" class="ui-content" id="bgStyle" 
+      style="background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,0.5)), url(nolan.jpg); 
+      background-size: cover;">
+        <h1 class="dName">Christopher<br>Nolan</h1>
+        <p>영국 런던 출신의 영화 감독으로 상업성과 예술성을 동시에 확보한 감독으로 인정받고 있다. 
+          현재, 전세계 영화 감독 흥행 순위에서 8위에 있는 감독이다.</p>
+        <h2>- 대표작 -</h2>
+        <div class="movieList">
+          <div class="mPoster">
+            <img src="nolan1.jpeg" style="width:100%;">
+          </div>
+          <div class="mEx">
+            <h3>다크나이트</h3>
+            <p>개봉 : 2008.07.18.</p>
+            <p>장르 : 슈퍼히어로</p>
+            <p>출연 : 크리스찬 베일, 마이클 케인, 히스 레저</p>
+          </div>
+        </div>
+        <div class="movieList">
+          <div class="mPoster">
+            <img src="nolan2.jpeg" style="width:100%;">
+          </div>
+          <div class="mEx">
+            <h3>인터스텔라</h3>
+            <p>개봉 : 2014.11.06.</p>
+            <p>장르 : SF</p>
+            <p>출연 : 매튜 매커너히, 앤 해서웨이, 제시카 채스테인</p>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <div id="page5" data-role="page" data-theme="b">
+      <div data-role="main" class="ui-content" id="bgStyle" 
+      style="background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,0.5)), url(hayao.jpeg); 
+      background-size: cover;">
+        <h1 class="dName">Miyazaki<br>Hayao</h1>
+        <p>일본을 대표하는 세계적인 애니메이션 감독이자 애니메이터, 영화 감독이다. 
+          2016 전까지 100억엔을 넘은 작품은 지브리 스튜디오의 작품을 제외하곤 단 한 작품도 나오지 않았다.</p>
+        <h2>- 대표작 -</h2>
+        <div class="movieList">
+          <div class="mPoster">
+            <img src="hayao1.jpeg" style="width:100%;">
+          </div>
+          <div class="mEx">
+            <h3>센과 치히로의 행방불명</h3>
+            <p>개봉 : 2001.07.20.</p>
+            <p>장르 : 애니메이션</p>
+            <p>출연 : 히이라기 루미, 이리노 미유, 나츠키 마리</p>
+          </div>
+        </div>
+        <div class="movieList">
+          <div class="mPoster">
+            <img src="hayao2.jpeg" style="width:100%;">
+          </div>
+          <div class="mEx">
+            <h3>하울의 움직이는 성</h3>
+            <p>개봉 : 2004.09.05.</p>
+            <p>장르 : 애니메이션</p>
+            <p>출연 : 바이쇼 치에코, 기무라 타쿠야, 미와 아키히로</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </body>
+</html>

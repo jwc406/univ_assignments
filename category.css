@@ -1,0 +1,42 @@
+#main{
+    padding:10px 50px;
+}
+
+#categories{
+    margin:30px;
+}
+
+.container {
+    position: relative;
+    float: left;
+    width: 45%;
+    height: auto;
+    line-height: 0;
+    padding: 2.5%; 
+}
+  
+.img {
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    border-radius: 70%;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+    visibility: hidden;
+    color:white;
+    font-size: 20px;
+    text-shadow: none;
+}
+
+.container:hover .img{
+    filter:brightness(50%);
+}
+  
+.container:hover .text {
+     visibility:visible;
+}    

@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="common.css" rel="stylesheet" type="text/css"> 
+    <link href="ranking.css" rel="stylesheet" type="text/css">    
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css"/>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+  </head> 
+  <body>
+    <div data-role="page" id="page" data-theme="a" style="background: url(in.jpg); background-size:cover;">
+      <div data-role="header" data-position="fixed" id="header">
+          <h1 id="title">상영 영화 순위</h1>
+      </div>
+      <div data-role="main" class="ui-content" id="poster">
+        <section>
+            <ul class="slider">
+              <li>
+                <div style="background-image:url('https://img.cgv.co.kr/Movie/Thumbnail/Poster/000083/83115/83115_320.jpg')">
+                </div>
+                <h3 class="name">👑 1위 분노의 질주 - 더 얼티메이트</h3>
+              </li>
+              <li>
+                <div style="background-image:url('https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84643/84643_320.jpg');">
+                </div>
+                <h3 class="name">2위 크루엘라</h3>
+              </li>
+              <li>
+                <div style="background-image:url('https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84624/84624_320.jpg');">
+                </div>
+                <h3 class="name">3위 파이프라인</h3>
+              </li>
+              <li>
+                <div style="background-image:url('https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84583/84583_320.jpg');">
+                </div>
+                <h3 class="name">4위 굴뚝마을의 푸펠</h3>
+              </li>
+              <li>
+                <div style="background-image:url('https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84279/84279_320.jpg');">
+                </div>
+                <h3 class="name">5위 극장판 귀멸의 칼날</h3>
+              </li>
+              <li>
+                <div style="background-image:url('https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84562/84562_320.jpg');">
+                </div>
+                <h3 class="name">6위 애플</h3>
+              </li>
+            </ul>
+        </section>
+        <div id="btn" class="btn" data-role="controlgroup" data-type="horizontal">
+            <button type="button" id="prev"><</button>
+            <button type="button" id="next">></button>
+        </div>
+      </div> 
+      <div data-role="footer" data-position="fixed" id="nav">
+        <div data-role="navbar" data-type="horizontal" style="text-align: center">
+          <ul>
+            <li><a href="http://www.cgv.co.kr/ticket/" data-icon="calendar" class="ui-nodisc-icon" id="nav">예매</a></li>
+            <li><a href="index.html" rel="external" data-icon="home" class="ui-nodisc-icon" id="nav">홈</a></li>
+            <li><a href="archives.html" rel="external" data-icon="edit" class="ui-nodisc-icon" id="nav">기록</a></li>
+          </ul>
+        </div>
+      </div>
+      </div> 
+    <script type="text/javascript" src="ranking.js"></script> 
+  </body>
+</html>
