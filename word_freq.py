@@ -1,8 +1,8 @@
+import re
+
 f = open("textfile.txt", "r")
-list = f.readlines()
+text = f.readlines()
 
-a = list[0].split()
-print(a)
+text = re.sub("[-=+,#/\?:^.@*\"※~ㆍ!]", "", '{}'.format(text))
 
-num = int
 f.close()
