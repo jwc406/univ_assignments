@@ -1,8 +1,10 @@
 import re
 
-f = open("textfile.txt", "r")
-text = f.readlines()
+f = open('textfile.txt', 'r', encoding='utf-8')
 
-text = re.sub("[-=+,#/\?:^.@*\"※~ㆍ!]", "", '{}'.format(text))
+text = f.readlines()
+text = list(map(lambda s: s.strip(), text))
+
+print(text)
 
 f.close()
