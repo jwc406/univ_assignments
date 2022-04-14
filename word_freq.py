@@ -26,8 +26,9 @@ counts = get_counts(words)
 
 counts = sorted(counts.items(), key=lambda x:x[1], reverse=True)
 
+num = int(input())
 
-for key, value in counts[:5]:
+for key, value in counts[:num]:
     print(format(key, "5"), str(value).rjust(5))
 
 f.close()
