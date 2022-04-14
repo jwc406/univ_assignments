@@ -7,6 +7,8 @@ t = list(map(lambda s: s.strip(), t))
 
 text = " ".join(t)
 
+text = re.sub('[-=+,#/\?:^.@*\"※~ㆍ!』‘|\(\)\[\]`\'…》\”\“\’·]', '', text)
+
 print(text)
 
 f.close()
