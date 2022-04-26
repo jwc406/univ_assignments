@@ -1,4 +1,3 @@
-
 n = int(input())
 
 list = [0 for i in range(n+1)]
@@ -13,5 +12,5 @@ for i in range(2,n+1):
 	_curr, _next = _next, _curr+_next
 	list[i] = _next
 
-print(list[:n+1])
-print(list[n])
+print(' '.join(map(str, list[1:])))
+print("F10 = " + str(list[n]))
