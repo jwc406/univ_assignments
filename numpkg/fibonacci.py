@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("fibonacci number: "))
 
 list = [0 for i in range(n+1)]
 
