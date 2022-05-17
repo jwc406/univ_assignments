@@ -1,24 +1,163 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Main</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <div class="main_container">
-      <header class="header_bar">
-        <div class="header_bar-col1">
-          <img class="header_bar-logo" src="Images/logo.png" alt="로고" />
-          <input class="header_bar-search" type="text" />
-          <img class="header_bar-search-icon" src="Images/search.png" />
+
+<head>
+  <title>Main</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <style type="text/css">
+    .section {
+      margin: auto;
+      justify-content: center;
+      width: 60%;
+    }
+  </style>
+  <script type="text/javascript">
+    function button1() {
+      document.getElementById("button1").click();
+    }
+    function button2() {
+      document.getElementById("button2").click();
+    }
+    function button3() {
+      document.getElementById("button3").click();
+    }
+    function button4() {
+      document.getElementById("button4").click();
+    }
+  </script>
+</head>
+
+<body style="background-color: #F9F5EA;">
+  <header style="background-color: #FFB02E;">
+    <section class="section">
+      <br>
+      <table class="header">
+        <tr>
+          <td style="width: 17%;">
+            <a href="main.html">
+              <img src="Img/logo.png" style="height: 50px">
+            </a>
+          </td>
+          <td style="width: 50%; align-items: stretch;">
+            <input class="input" type="text" name="search" placeholder="검색어를 입력하세요">
+            <input class="submit" type="submit" value="submit"></input>
+          </td>
+          <td style="width: 17%;"></td>
+          <td style="width: 8%;">
+            <button class="signUp">Sign up</button>
+          </td>
+          <td style="width: 8%;">
+            <button class="signIn">Sign in</button>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <ul></ul>
+      <ul class="nav">
+        <li><a id="button1" style="font-weight: 900;" onclick="mouseOver1();" onmouseover="mouseOver1()"
+            onmouseout="mouseOut()">업체예약</a></li>
+        <li><a id="button2" style="font-weight: 900;" onclick="mouseOver2();" onmouseover="mouseOver2()"
+            onmouseout="mouseOut()">커뮤니티</a></li>
+        <li><a id="button3" style="font-weight: 900;" onclick="mouseOver3();" onmouseover="mouseOver3()"
+            onmouseout="mouseOut()">위탁</a></li>
+        <li><a id="button4" style="font-weight: 900;" onclick="mouseOver4();" onmouseover="mouseOver4()"
+            onmouseout="mouseOut()">회사소개</a></li>
+        <script>
+          function mouseOver1() {
+            document.getElementById("button1").style.color = "#996b20";
+          }
+          function mouseOver2() {
+            document.getElementById("button2").style.color = "#996b20";
+          }
+          function mouseOver3() {
+            document.getElementById("button3").style.color = "#996b20";
+          }
+          function mouseOver4() {
+            document.getElementById("button4").style.color = "#996b20";
+          }
+          function mouseOut() {
+            document.getElementById("button1").style.color = "#000";
+            document.getElementById("button2").style.color = "#000";
+            document.getElementById("button3").style.color = "#000";
+            document.getElementById("button4").style.color = "#000";
+          }
+        </script>
+      </ul>
+    </section>
+  </header>
+  <div class="main_container">
+    <div class="content_container">
+      <div class="row1">
+        <p class="text">반려동물 위탁 서비스가 필요하신가요?</p>
+        <div class="row1_container">
+          <div class="row1_col">
+            <a href="#"><img src="Img/col1-1.png" alt="아이콘1" /></a>
+            <p>개인 위탁</p>
+          </div>
+          <div class="row1_col">
+            <a href="#"><img src="Img/col1-2.png" alt="아이콘2" /></a>
+            <p>업체 위탁</p>
+          </div>
         </div>
-        <div class="header_bar-col2">
-          <p class="header_bar-member_name">000님 안녕하세요.</p>
-          <button class="header_bar-btn">마이페이지</button>
-          <button class="header_bar-btn">로그아웃</button>
+      </div>
+      <div class="row2">
+        <p class="text">업체 정보가 필요하신가요?</p>
+        <div class="parent">
+          <div class="swiper-button-prev" style="background-image: none; width: fit-content; height: fit-content;">
+          </div>
+          <div class="swiper-container" style="padding: 0 10px;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://ktsmemo.cafe24.com/p/0191.jpg"></div>
+              <div class="swiper-slide"><img src="http://ktsmemo.cdn3.cafe24.com/p/0753.jpg"></div>
+              <div class="swiper-slide"><img src="http://oldmidi.cdn3.cafe24.com/p/0580.jpg"></div>
+              <div class="swiper-slide"><img src="https://ktsmemo.cafe24.com/p/0191.jpg"></div>
+              <div class="swiper-slide"><img src="https://ktsmemo.cafe24.com/p/0479.jpg"></div>
+              <div class="swiper-slide"><img src="https://ktsmemo.cafe24.com/p/0479.jpg"></div>
+              <div class="swiper-slide"><img src="https://ktsmemo.cafe24.com/p/0479.jpg"></div>
+              <div class="swiper-slide"><img src="https://ktsmemo.cafe24.com/p/0479.jpg"></div>
+            </div>
+          </div>
+          <div class="swiper-button-next" style="background-image: none; width: fit-content; height: fit-content;">
+          </div>
         </div>
-      </header>
+      </div>
+      <div class="row3">
+        <p class="text">우리 동네 이웃들과 소통해요!</p>
+        <div class="row3_container">
+          <div class="row3_col">
+            <div class="row3_col-title">
+              <p>인기글</p>
+              <p>+ 더보기</p>
+            </div>
+            <div class="row3_col-post">
+              <p>개인 위탁</p>
+              <p>개인 위탁</p>
+              <p>개인 위탁</p>
+            </div>
+          </div>
+          <div class="row3_col">
+            <div class="row3_col-title">
+              <p>최신글</p>
+              <p>+ 더보기</p>
+            </div>
+            <div class="row3_col-post">
+              <p>개인 위탁</p>
+              <p>개인 위탁</p>
+              <p>개인 위탁</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+  <script src="swiper.js"></script>
+</body>
+
 </html>
