@@ -185,13 +185,6 @@ a:visited {
   flex-direction: column;
   align-items: stretch;
 }
-.banner {
-  background-color: darksalmon;
-  margin: 3% 0;
-  height: 200px;
-  text-align: center;
-  border-radius: 20px;
-}
 .text {
   font-size: 25px;
   font-weight: bold;
@@ -201,7 +194,6 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  margin: 5% 0;
 }
 .row1_container {
   display: flex;
@@ -331,4 +323,11 @@ a:visited {
 
 footer {
   background-color: black;
+}
+
+.banner {
+  background-color: darksalmon;
+  margin-top: 5%;
+  height: 300px;
+  text-align: center;
 }
