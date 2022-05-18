@@ -9,7 +9,7 @@ for (var i = 0; i < x.length; i++) {
 
   new Swiper(swiper, {
     slidesPerView: 3,
-    spaceBetween: 35,
+    spaceBetween: 30,
     navigation: {
       nextEl: nx,
       prevEl: pr,
