@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,6 +19,20 @@
       margin: auto;
       justify-content: center;
       width: 60%;
+    }
+
+    a:link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #996b20;
     }
   </style>
   <script type="text/javascript">
@@ -43,7 +59,7 @@
         <tr>
           <td style="width: 17%;">
             <a href="main.html">
-              <img src="Img/logo.png" style="height: 50px">
+              <img src="img/logo.png" style="height: 50px">
             </a>
           </td>
           <td style="width: 50%; align-items: stretch;">
@@ -52,48 +68,25 @@
           </td>
           <td style="width: 17%;"></td>
           <td style="width: 8%;">
-            <button class="signUp">Sign up</button>
+            <button class="signUp" onclick="location.href='signUp.html'">Sign up</button>
           </td>
           <td style="width: 8%;">
-            <button class="signIn">Sign in</button>
+            <button class="signIn" onclick="location.href='signIn.html'">Sign in</button>
           </td>
         </tr>
       </table>
       <br>
       <ul></ul>
       <ul class="nav">
-        <li><a id="button1" style="font-weight: 900;" onclick="mouseOver1();" onmouseover="mouseOver1()"
-            onmouseout="mouseOut()">업체예약</a></li>
-        <li><a id="button2" style="font-weight: 900;" onclick="mouseOver2();" onmouseover="mouseOver2()"
-            onmouseout="mouseOut()">커뮤니티</a></li>
-        <li><a id="button3" style="font-weight: 900;" onclick="mouseOver3();" onmouseover="mouseOver3()"
-            onmouseout="mouseOut()">위탁</a></li>
-        <li><a id="button4" style="font-weight: 900;" onclick="mouseOver4();" onmouseover="mouseOver4()"
-            onmouseout="mouseOut()">회사소개</a></li>
-        <script>
-          function mouseOver1() {
-            document.getElementById("button1").style.color = "#996b20";
-          }
-          function mouseOver2() {
-            document.getElementById("button2").style.color = "#996b20";
-          }
-          function mouseOver3() {
-            document.getElementById("button3").style.color = "#996b20";
-          }
-          function mouseOver4() {
-            document.getElementById("button4").style.color = "#996b20";
-          }
-          function mouseOut() {
-            document.getElementById("button1").style.color = "#000";
-            document.getElementById("button2").style.color = "#000";
-            document.getElementById("button3").style.color = "#000";
-            document.getElementById("button4").style.color = "#000";
-          }
-        </script>
+        <div class="menu">
+          <li><a id="button1" href="#none" style="font-weight: 900;">업체예약</a></li>
+          <li><a id="button2" href="#none" style="font-weight: 900;">커뮤니티</a></li>
+          <li><a id="button3" href="individualT.html" style="font-weight: 900;">위탁</a></li>
+          <li><a id="button4" href="CompanyInt.html" style="font-weight: 900;">회사소개</a></li>
+        </div>
       </ul>
     </section>
   </header>
-  <div class="banner"></div>
   <div class="main_container">
     <div class="content_container">
       <div class="row1">
@@ -136,21 +129,21 @@
           <div class="row3_col">
             <div class="row3_col-title">
               <p>인기글</p>
-              <a href="">
+              <a href="#none">
                 <p>+ 더보기</p>
               </a>
             </div>
             <div class="row3_col-post">
-              <a href="">
+              <a href="#none">
                 <p>개인 위탁</p>
               </a>
-              <a href="">
+              <a href="#none">
                 <p>개인 위탁</p>
               </a>
-              <a href="">
+              <a href="#none">
                 <p>개인 위탁</p>
               </a>
-              <a href="">
+              <a href="#none">
                 <p>개인 위탁</p>
               </a>
             </div>
@@ -158,21 +151,21 @@
           <div class="row3_col">
             <div class="row3_col-title">
               <p>최신글</p>
-              <a href="">
+              <a href="#none">
                 <p>+ 더보기</p>
               </a>
             </div>
             <div class="row3_col-post">
-              <a href="">
+              <a href="#none">
                 <p>개인 위탁</p>
               </a>
-              <a href="">
+              <a href="#none">
                 <p>개인 위탁</p>
               </a>
-              <a href="">
+              <a href="#none">
                 <p>개인 위탁</p>
               </a>
-              <a href="">
+              <a href="#none">
                 <p>개인 위탁</p>
               </a>
             </div>
@@ -181,9 +174,69 @@
       </div>
     </div>
   </div>
-  <footer>
-    hi
+
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <div id="copyright">
+          <ul class="copyright-list">
+            <li class="copyright-list-item">고객문의 <a href="mailto:cs@happypetppy.com">cs@happypetppy.com</a>
+            </li>
+            <li class="copyright-list-item">제휴문의 <a href="mailto:contact@happypetppy.com">contact@happypetppy.com</a>
+            </li>
+          </ul>
+          <ul class="copyright-list">
+            <li class="copyright-list-item">지역광고 <a href="mailto:ad@happypetppy.com">ad@happypetppy.com</a>
+            </li>
+            <li class="copyright-list-item">PR문의 <a href="mailto:pr@happypetppy.com">pr@happypetppy.com</a>
+            </li>
+          </ul>
+          <ul class="copyright-list copyright-list-light">
+            <li class="copyright-list-item">
+              <address>경상북도 경산시 하양읍 하양로 13-13 (Happy Petppy)</address>
+            </li>
+            <li class="copyright-list-item">사업자 등록번호 : 001-002-0003</li>
+            <li class="copyright-list-item">직업정보제공사업 신고번호 : J0000000000000</li>
+          </ul>
+          <div id="social">
+            <ul class="social-list">
+              <li class="social-list-item">
+                <a target="_blank" class="footer-social-link" href="https://www.facebook.com/daangn">
+                  <img alt="facebook"
+                    src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/footer/icon-facebook-0563f4a93852d073b41f13b8bcabb03d47af3bb3a6755cdfedd8a73686c7f18c.svg">
+                  <span class="sr-only">facebook</span>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a target="_blank" class="footer-social-link" href="https://www.instagram.com/daangnmarket/">
+                  <img alt="instagram"
+                    src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/footer/icon-instagram-2f6c88a461597907c114b7ce28eab053fcae791ed26417915fefb6f7c9f95756.svg">
+                  <span class="sr-only">instagram</span>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a target="_blank" class="footer-social-link" href="https://blog.naver.com/daangn">
+                  <img alt="blog"
+                    src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/footer/icon-blog-e1b0d512d1766a6962ec5bbb5b0803d2a6a9c55ad97db5ba9eebb76013caceba.svg">
+                  <span class="sr-only">blog</span>
+                </a>
+              </li>
+              <li class="global-links">
+                <img alt="country"
+                  src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/footer/icon-global-2f53678b428ec623cefd07a90dd7777f3e55fc0433918f645d7d75ace6ff1fc3.png"
+                  width="24" height="24">
+                <select id="global-links-select">
+                  <option value="kr">한국</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-text">©Happy Petppy Inc.</div>
+        </div>
+      </div>
+    </div>
   </footer>
+
   <script src="swiper.js"></script>
 </body>
 

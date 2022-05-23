@@ -1,8 +1,3 @@
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
 a,
 a:active,
 a:visited {
@@ -138,11 +133,11 @@ a:visited {
   filter: brightness(70%);
 }
 .swiper-slide {
-  border-radius: 15px;
+  border-radius: 50%;
   overflow: hidden;
 }
 .swiper-slide img {
-  border-radius: 15px;
+  border-radius: 50%;
   max-width: 100%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
   transition: 0.5s;
 }

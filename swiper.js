@@ -8,7 +8,7 @@ for (var i = 0; i < x.length; i++) {
   var pr = el.getElementsByClassName("swiper-button-prev")[0];
 
   new Swiper(swiper, {
-    slidesPerView: 3,
+    slidesPerView: 5,
     spaceBetween: 30,
     navigation: {
       nextEl: nx,
