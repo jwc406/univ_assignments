@@ -8,22 +8,23 @@ a:visited {
 /*=================================================================*/
 
 .main_container {
-  background-color: whitesmoke;
   display: flex;
   width: 100%;
-  margin-top: 1%;
+  margin-top: 5%;
   justify-content: center;
 }
 .content_container {
   display: flex;
   width: 70%;
   flex-direction: column;
-  align-items: stretch;
 }
 .text {
-  font-size: 25px;
+  width: fit-content;
+  font-size: 23px;
   font-weight: bold;
+  border-bottom: 2px solid #ffd78c;
   margin-bottom: 5%;
+  padding: 5px;
 }
 .row1 {
   display: flex;
@@ -32,21 +33,20 @@ a:visited {
 }
 .row1_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .row1_col {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%;
+  width: 35%;
 }
 .row1_col img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   filter: brightness(70%);
 }
 .row1_col a {
   overflow: hidden;
-  border-radius: 15px;
 }
 .row1_col img {
   width: 100%;
@@ -77,15 +77,16 @@ a:visited {
 .row3_container {
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1% 0 2% 0;
-  border-radius: 15px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 .row3_col {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 35%;
+  width: 38%;
   align-items: stretch;
   padding: 1% 5%;
 }
@@ -100,10 +101,9 @@ a:visited {
 }
 .row3_col-post p {
   font-size: small;
-  text-align: center;
   border-bottom: 1px solid rgba(17, 17, 17, 0.1);
   margin-bottom: 3%;
-  padding-bottom: 3%;
+  padding: 0 0 2% 2%;
 }
 
 /*===============================================*/
@@ -122,19 +122,18 @@ a:visited {
   width: 90%;
 }
 .swiper-slide {
+  background-color: #ffd78c;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px 0;
-}
-.swiper-slide img:hover {
-  transform: scale(1.2);
-  filter: brightness(70%);
-}
-.swiper-slide {
   border-radius: 50%;
   overflow: hidden;
+}
+.swiper-slide img:hover {
+  transform: scale(1.1);
+  filter: brightness(70%);
 }
 .swiper-slide img {
   border-radius: 50%;
@@ -145,15 +144,15 @@ a:visited {
   content: "\f0d9";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 30px;
-  color: #555;
+  font-size: 40px;
+  color: #ffb02e;
 }
 .swiper-button-next::after {
   content: "\f0da";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 30px;
-  color: #555;
+  font-size: 40px;
+  color: #ffb02e;
 }
 
 footer {
