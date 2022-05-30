@@ -3,9 +3,3 @@ body {
   width: 100%;
   margin: 0;
 }
-a,
-a:active,
-a:visited {
-  text-decoration: none;
-  color: black;
-}
