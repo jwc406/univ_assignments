@@ -30,6 +30,73 @@
     a:hover {
       color: #996b20;
     }
+
+    #button4 {
+         color: #FFB02E;
+      }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn_icon {
+      font-family: 'Material Icons';
+      padding: 10px;
+      font-size: 13px;
+      vertical-align: middle;
+    }
+
+    .dropbtn {
+      border: none;
+      background-color: #FFB02E;
+      font-weight: bold;
+      color: rgb(37, 37, 37);
+      padding: 12px;
+      width: 140px;
+      text-align: left;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      font-weight: 400;
+      background-color: #f9f9f9;
+      background-color: #ff6ea8;
+      background-color: rgba(247, 119, 170, 0.95);
+      min-width: 140px;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      text-decoration: none;
+      color: rgb(37, 37, 37);
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 12px 20px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #b37f29;
+      border-radius: 15px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .profile {
+      height: 30%;
+      width: 30%;
+      border-radius: 70%;
+      vertical-align: middle;
+    }
   </style>
 </head>
 
@@ -50,23 +117,30 @@
           </td>
           <td style="width: 17%;"></td>
           <td style="width: 8%;">
-            <button class="signUp" onclick="location.href='signUp.html'">Sign up</button>
-          </td>
-          <td style="width: 8%;">
-            <button class="signIn" onclick="location.href='signIn.html'">Sign in</button>
+            <div class="dropdown">
+              <button class="dropbtn">
+                <img class="profile" src="img/profile.png">
+                <span class="dropbtn_icon">홍길동 님</span>
+              </button>
+              <div class="dropdown-content">
+                <a href="myPage.html">마이페이지</a>
+                <a href="requireList.html">요청목록</a>
+                <a href="signIn.html">로그아웃</a>
+              </div>
+            </div>
           </td>
         </tr>
       </table>
       <br>
-      <ul></ul>
-      <ul class="nav">
-        <div class="menu">
-          <li><a id="button1" href="#none" style="font-weight: 900;">업체예약</a></li>
-          <li><a id="button2" href="#none" style="font-weight: 900;">커뮤니티</a></li>
-          <li><a id="button3" href="individualT.html" style="font-weight: 900;">위탁</a></li>
-          <li><a id="button4" href="CompanyInt.html" style="font-weight: 900;">회사소개</a></li>
-        </div>
-      </ul>
+         <ul></ul>
+         <ul class="nav">
+            <div class="menu">
+               <li><a id="button1" href="#none" style="font-weight: 900;">업체예약</a></li>
+               <li><a id="button2" href="#none" style="font-weight: 900;">커뮤니티</a></li>
+               <li><a id="button3" href="individualT.html" style="font-weight: 900;">위탁</a></li>
+               <li><a id="button4" href="CompanyInt.html" style="font-weight: 900;">회사소개</a></li>
+            </div>
+         </ul>
     </section>
   </header>
 

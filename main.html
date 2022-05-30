@@ -34,6 +34,69 @@
     a:hover {
       color: #996b20;
     }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn_icon {
+      font-family: 'Material Icons';
+      padding: 10px;
+      font-size: 13px;
+      vertical-align: middle;
+    }
+
+    .dropbtn {
+      border: none;
+      background-color: #FFB02E;
+      font-weight: bold;
+      color: rgb(37, 37, 37);
+      padding: 12px;
+      width: 140px;
+      text-align: left;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      font-weight: 400;
+      background-color: #f9f9f9;
+      background-color: #ff6ea8;
+      background-color: rgba(247, 119, 170, 0.95);
+      min-width: 140px;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      text-decoration: none;
+      color: rgb(37, 37, 37);
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 12px 20px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #b37f29;
+      border-radius: 15px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .profile {
+      height: 30%;
+      width: 30%;
+      border-radius: 70%;
+      vertical-align: middle;
+    }
   </style>
   <script type="text/javascript">
     function button1() {
@@ -68,10 +131,17 @@
           </td>
           <td style="width: 17%;"></td>
           <td style="width: 8%;">
-            <button class="signUp" onclick="location.href='signUp.html'">Sign up</button>
-          </td>
-          <td style="width: 8%;">
-            <button class="signIn" onclick="location.href='signIn.html'">Sign in</button>
+            <div class="dropdown">
+              <button class="dropbtn">
+                <img class="profile" src="img/profile.png">
+                <span class="dropbtn_icon">홍길동 님</span>
+              </button>
+              <div class="dropdown-content">
+                <a href="myPage.html">마이페이지</a>
+                <a href="requireList.html">요청목록</a>
+                <a href="signIn.html">로그아웃</a>
+              </div>
+            </div>
           </td>
         </tr>
       </table>
@@ -93,7 +163,7 @@
         <p class="text">반려동물 위탁 서비스가 필요하신가요?</p>
         <div class="row1_container">
           <div class="row1_col">
-            <a href="#"><img src="Img/col1-1.png" alt="아이콘1" /></a>
+            <a href="individualT.html"><img src="Img/col1-1.png" alt="아이콘1" /></a>
             <p>개인 위탁</p>
           </div>
           <div class="row1_col">
@@ -109,14 +179,14 @@
           </div>
           <div class="swiper-container" style="padding: 0 10px;">
             <div class="swiper-wrapper">
-              <a href="" class="swiper-slide"><img src="img/row2-a.png"></a>
-              <a href="" class="swiper-slide"><img src="img/row2-b.png"></a>
-              <a href="" class="swiper-slide"><img src="img/row2-c.png"></a>
-              <a href="" class="swiper-slide"><img src="img/row2-d.png"></a>
-              <a href="" class="swiper-slide"><img src="img/row2-e.png"></a>
-              <a href="" class="swiper-slide"><img src="img/row2-a.png"></a>
-              <a href="" class="swiper-slide"><img src="img/row2-b.png"></a>
-              <a href="" class="swiper-slide"><img src="img/row2-c.png"></a>
+              <a href="#none" class="swiper-slide"><img src="img/row2-a.png"></a>
+              <a href="#none" class="swiper-slide"><img src="img/row2-b.png"></a>
+              <a href="#none" class="swiper-slide"><img src="img/row2-c.png"></a>
+              <a href="#none" class="swiper-slide"><img src="img/row2-d.png"></a>
+              <a href="#none" class="swiper-slide"><img src="img/row2-e.png"></a>
+              <a href="#none" class="swiper-slide"><img src="img/row2-a.png"></a>
+              <a href="#none" class="swiper-slide"><img src="img/row2-b.png"></a>
+              <a href="#none" class="swiper-slide"><img src="img/row2-c.png"></a>
             </div>
           </div>
           <div class="swiper-button-next" style="background-image: none; width: fit-content; height: fit-content;">

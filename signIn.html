@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,43 +28,42 @@
         }
     </script>
 </head>
-
 <body style="background-color: #F9F5EA;">
-    <header style="background-color: #FFB02E;">
-        <section class="section">
-            <br>
-            <table class="header">
-                <tr>
-                    <td style="width: 17%;">
-                        <a href="main.html">
-                            <img src="img/logo.png" style="height: 50px">
-                        </a>
-                    </td>
-                    <td style="width: 50%; align-items: stretch;">
-                        <input class="input" type="text" name="search" placeholder="검색어를 입력하세요">
-                        <input class="submit" type="submit" value="submit"></input>
-                    </td>
-                    <td style="width: 17%;"></td>
-                    <td style="width: 8%;">
-                        <button class="signUp" onclick="location.href='signUp.html'">Sign up</button>
-                    </td>
-                    <td style="width: 8%;">
-                        <button class="signIn" onclick="location.href='signIn.html'">Sign in</button>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <ul></ul>
-            <ul class="nav">
-                <div class="menu">
-                    <li><a id="button1" href="#none" style="font-weight: 900;">업체예약</a></li>
-                    <li><a id="button2" href="#none" style="font-weight: 900;">커뮤니티</a></li>
-                    <li><a id="button3" href="individualT.html" style="font-weight: 900;">위탁</a></li>
-                    <li><a id="button4" href="CompanyInt.html" style="font-weight: 900;">회사소개</a></li>
-                </div>
-            </ul>
-        </section>
-    </header>
+    <header style="background-color: #FFB02E;" >
+		<section class="section">
+			<br>
+			<table class="header">
+				<tr>
+					<td style="width: 17%;">
+						<a href="individualT.html">
+							<img src="img/logo.png" style="height: 50px">
+						</a>
+					</td>
+					<td style="width: 50%; align-items: stretch;">
+						<input class="input" type="text" name="search" placeholder="검색어를 입력하세요">
+						<input class="submit" type="submit" value="submit"></input>
+					</td>
+					<td style="width: 17%;"></td>
+					<td style="width: 8%;">
+						<button class="signUp" onclick="location.href='signUp.html'">Sign up</button>
+					</td>
+					<td style="width: 8%;">
+						<button class="signIn" onclick="location.href='signIn.html'">Sign in</button>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<ul></ul>
+			<ul class="nav">
+				<div class="menu">
+					<li><a id="button1" href="#none" style="font-weight: 900;">업체예약</a></li>
+					<li><a id="button2" href="#none" style="font-weight: 900;">커뮤니티</a></li>
+					<li><a id="button3" href="individualT.html" style="font-weight: 900;">위탁</a></li>
+					<li><a id="button4" href="CompanyInt.html" style="font-weight: 900;">회사소개</a></li>
+				</div>
+			</ul>
+		</section>
+	</header>
     <div class="loginbox">
         <div class="bigtitle">로그인</div><br>
         <form action="#">
@@ -81,14 +79,13 @@
                     <label for="loginchk" class="loginchk" style="margin-left: 55px;">
                         <input type="checkbox" id="loginchk">
                         <i class="circle"></i>
-                        <span class="text">로그인 상태 유지</span>
+                        <span class="text" style="cursor: pointer;">로그인 상태 유지</span>
                     </label>
                 </div>
-
-                <button type="submit" style="margin-left: 60px;">로그인</button>
+                <button type="submit" style="margin-left: 60px;" id="btn">로그인</button>
             </fieldset>
         </form>
-
+        <script src="signIn.js"></script>
         <div class="listbox">
             <ul>
                 <li><a href="#">비밀번호 찾기</a></li>
