@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="signIn.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>커뮤니티</title>
+    <link href="header.css" rel="stylesheet" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="footer.css">
     <style type="text/css">
@@ -15,21 +14,63 @@
             justify-content: center;
             width: 60%;
         }
+
+        #button4 {
+            color: #FFB02E;
+        }
+
+        a:link {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #996b20;
+        }
+
+        .menu-active {
+            color: #FFB02E;
+        }
+
+        .mainart {
+            margin: auto;
+        }
+
+        .intsection {
+            position: relative;
+
+        }
+
+        .article1 {
+            display: flex;
+            margin: auto;
+            padding-left: 15em;
+        }
+
+        .left1 {
+            font-size: 17px;
+            font-weight: 400;
+            background-color: rgba(255, 176, 46, 0.1);
+            border: 0 50 0 0;
+            float: left;
+            width: 70%;
+        }
+
+        .right1 {
+            float: right;
+            width: 70%;
+        }
+
+        .text-top {
+            font-size: 23px;
+            font-weight: 700;
+        }
     </style>
-    <script type="text/javascript">
-        function button1() {
-            document.getElementById("button1").click();
-        }
-        function button2() {
-            document.getElementById("button2").click();
-        }
-        function button3() {
-            document.getElementById("button3").click();
-        }
-        function button4() {
-            document.getElementById("button4").click();
-        }
-    </script>
 </head>
 
 <body style="background-color: #F9F5EA;">
@@ -68,36 +109,10 @@
             </ul>
         </section>
     </header>
-    <div class="loginbox">
-        <div class="bigtitle">로그인</div><br>
-        <form action="#">
-            <fieldset style="border: none;">
-                <legend>로그인 구역</legend>
-                <h2><mark style="background-color: #ffaf2e2b;">🧡HAPPY PETPPY 방문을 환영합니다🧡</mark></h2>
-                <label for="loginid" class="away">아이디 입력</label>
-                <input style="margin-left: 60px;" type="text" id="loginid" placeholder="아이디">
-                <label for="loginpass" class="away">비밀번호 입력</label>
-                <input style="margin-left: 60px;" type="password" id="loginpass" placeholder="비밀번호">
+    <br>
+    <br>
+    <br>
 
-                <div class="chechline">
-                    <label for="loginchk" class="loginchk" style="margin-left: 55px;">
-                        <input type="checkbox" id="loginchk">
-                        <i class="circle"></i>
-                        <span class="text" style="cursor: pointer;">로그인 상태 유지</span>
-                    </label>
-                </div>
-                <button type="submit" style="margin-left: 60px;" id="btn">로그인</button>
-            </fieldset>
-        </form>
-        <script src="signIn.js"></script>
-        <div class="listbox">
-            <ul>
-                <li><a href="#">비밀번호 찾기</a></li>
-                <li><a href="#">아이디 찾기</a></li>
-                <li><a href="signUp.html">회원 가입</a></li>
-            </ul>
-        </div>
-    </div>
     <footer id="footer">
         <div class="footer-main">
             <div id="copyright">
@@ -129,3 +144,5 @@
         </div>
     </footer>
 </body>
+
+</html>
