@@ -72,12 +72,6 @@
             font-weight: 700;
         }
     </style>
-    <script type="text/javascript">
-        function newPage() {
-            alert("글 작성을 완료했습니다!");
-            window.location.replace('comunity.html');
-        }
-    </script>
 </head>
 
 <body style="background-color: #F9F5EA;">
@@ -135,8 +129,8 @@
                     <textarea placeholder="내용을 입력하세요."></textarea>
                 </form>
                 <div class="writeBox_btns">
-                    <input type="button" value="취소">
-                    <input id="post" type="submit" value="완료" onclick='newPage()'>
+                    <input type="button" value="취소" onclick="alert('글 작성을 취소했습니다 😥', location.href='comunity.html')">
+                    <input type="submit" value="완료" onclick="alert('글 작성을 완료했습니다 😊', location.href='comunity.html')">
                 </div>
             </div>
         </div>
