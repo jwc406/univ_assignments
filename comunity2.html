@@ -4,14 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>커뮤니티 글 목록</title>
+    <title>커뮤니티 글 작성</title>
     <link href="header.css" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="comunity.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style type="text/css">
         .section {
             margin: auto;
@@ -75,6 +72,12 @@
             font-weight: 700;
         }
     </style>
+    <script type="text/javascript">
+        function newPage() {
+            alert("글 작성을 완료했습니다!");
+            window.location.replace('comunity.html');
+        }
+    </script>
 </head>
 
 <body style="background-color: #F9F5EA;">
@@ -119,75 +122,22 @@
     <div class="comm_main">
         <div class="btns_container">
             <div class="btns">
-                <button class="btn" onclick="location.href='comunity.html'"
-                    style="background-color: white; color:#FFB02E;">글
-                    목록</button>
-                <button class="btn" onclick="location.href='comunity2.html'">글 작성</button>
-                <button class=" btn" onclick="location.href='comunity3.html'">방명록</button>
+                <button class="btn" onclick="location.href='comunity.html'">글 목록</button>
+                <button class="btn" onclick="location.href='comunity2.html'"
+                    style="background-color: white; color:#FFB02E;">글 작성</button>
+                <button class="btn" onclick="location.href='comunity3.html'">방명록</button>
             </div>
         </div>
-        <div class="posts_container">
-            <div class="posts">
-                <ul>
-                    <li class="post">
-                        <span>💗</span>
-                        <span>공지</span>
-                        <span>커뮤니티 이용 가이드</span>
-                        <span>180</span>
-                    </li>
-                    <li class="post">
-                        <span>💗</span>
-                        <span>일상</span>
-                        <span>같이 산책하실 분!</span>
-                        <span>20</span>
-                    </li>
-                    <li class="post">
-                        <span>💗</span>
-                        <span>일상</span>
-                        <span>저희 강아지 귀엽죠?</span>
-                        <i class="fas fa-camera"></i>
-                        <span>55</span>
-                    </li>
-                    <li class="post">
-                        <span>🤍</span>
-                        <span>질문</span>
-                        <span>OO동 동물병원 좋은 곳 어딘가요?</span>
-                        <span class="new">N</span>
-                        <span>2</span>
-                    </li>
-                    <li class="post">
-                        <span>🤍</span>
-                        <span>일상</span>
-                        <span>콩이의 데일리룩</span>
-                        <i class="fas fa-camera"></i>
-                        <span class="new">N</span>
-                        <span>12</span>
-                    </li>
-                    <li class="post">
-                        <span>🤍</span>
-                        <span>요청</span>
-                        <span>고양이 간식 추천 부탁드려요</span>
-                        <span>5</span>
-                    </li>
-                    <li class="post">
-                        <span>🤍</span>
-                        <span>일상</span>
-                        <span>안녕하세요!</span>
-                        <span>13</span>
-                    </li>
-                    <li class="post">
-                        <span>🤍</span>
-                        <span>일상</span>
-                        <span>오늘의 날씨</span>
-                        <span>4</span>
-                    </li>
-                    <li class="post">
-                        <span>🤍</span>
-                        <span>일상</span>
-                        <span>아침인사</span>
-                        <span>5</span>
-                    </li>
-                </ul>
+        <div class="write_container">
+            <div class="writeBox">
+                <form class="writePost">
+                    <input type="text" placeholder="제목">
+                    <textarea placeholder="내용을 입력하세요."></textarea>
+                </form>
+                <div class="writeBox_btns">
+                    <input type="button" value="취소">
+                    <input id="post" type="submit" value="완료" onclick='newPage()'>
+                </div>
             </div>
         </div>
     </div>

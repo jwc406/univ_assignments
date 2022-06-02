@@ -1,18 +1,12 @@
 footer {
   background-color: rgba(58, 58, 58, 0.5);
-  display: block;
+  display: flex;
   width: 100%;
   position: absolute;
   margin: 20px auto 20px auto;
   font-size: 13px;
-  justify-content: space-between;
   padding: 2% 0;
-}
-
-.footer-main {
   justify-content: center;
-  padding-left: 15em;
-  margin-left: 320px;
 }
 
 .copyright-list {
