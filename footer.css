@@ -1,5 +1,5 @@
 footer {
-  background-color: #3a3a3a;
+  background-color: rgba(58, 58, 58, 0.5);
   display: block;
   width: 100%;
   position: absolute;
@@ -12,6 +12,7 @@ footer {
 .footer-main {
   justify-content: center;
   padding-left: 15em;
+  margin-left: 320px;
 }
 
 .copyright-list {
@@ -27,13 +28,13 @@ footer ul > li {
 }
 
 #copyright {
-  color: #868e96;
+  color: #e0e0e0;
   margin: 0 0.8rem 0 0;
 }
 
 .copyright-text {
   margin-top: 33px;
-  color: #adb1ba;
+  color: #fafbfc;
   font-size: 15px;
   padding-left: 3em;
 }
