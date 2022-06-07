@@ -29,7 +29,7 @@ function paintPost(text) {
   span.innerText = text;
   delBtn.innerHTML = "X";
   delBtn.style =
-    "border: none; background-color:rgba(0,0,0,0); color:black; margin-left:20px; font-size:smaller;";
+    "border: none; background:none; color:#FFB02E; margin-left:20px; font-size:smaller;";
   li.appendChild(span);
   li.appendChild(delBtn);
   postList.appendChild(li);
