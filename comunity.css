@@ -1,18 +1,18 @@
 .comm_main {
-  display: flex;
+  margin: auto;
   justify-content: center;
-  height: auto;
-  margin-bottom: 5%;
+  width: 60%;
+  display: flex;
 }
 
 .btns_container {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-  margin-top: 1%;
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
 }
 
 .btns {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   height: 180px;
@@ -22,12 +22,16 @@
 
 .btn {
   background-color: #ffb02e;
+  padding: 15px;
+  width: 150px;
   border: none;
-  height: 50px;
-  border-radius: 25px;
-  font-weight: 900;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
   color: white;
+  font-weight: bold;
+  font-size: 11pt;
 }
 
 .btn:hover {
@@ -37,16 +41,15 @@
 }
 
 .posts_container {
-  display: flex;
-  flex: 2;
-  height: fit-content;
-  padding: 0 2%;
-  justify-content: flex-start;
+  position: static;
+  width: 80%;
+  float: right;
+  box-sizing: border-box;
 }
 
 .posts {
   background-color: white;
-  width: 70%;
+  width: 99%;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 1% 1%;
@@ -112,7 +115,6 @@ i {
   display: flex;
   flex: 2;
   height: fit-content;
-  padding: 0 2%;
   justify-content: flex-start;
 }
 
@@ -120,7 +122,7 @@ i {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 70%;
+  width: 100%;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   box-sizing: border-box;
@@ -186,7 +188,6 @@ textarea::placeholder {
   display: flex;
   flex: 2;
   height: fit-content;
-  padding: 0 2%;
   justify-content: flex-start;
 }
 
@@ -194,7 +195,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 70%;
+  width: 100%;
   min-height: 400px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
