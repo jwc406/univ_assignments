@@ -1,0 +1,330 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>업체위탁</title>
+		<link href="header.css" rel="stylesheet" />
+		<link href="footer.css" rel="stylesheet" />
+		<link href="reset.css" rel="stylesheet" />
+		<style type="text/css">
+			.section {
+				margin: auto;
+				justify-content: center;
+				width: 60%;
+			}
+
+			.left {
+				width: 20%;
+				float: left;
+				box-sizing: border-box;
+			}
+
+			.right {
+				position: static;
+				overflow: hidden;
+				width: 80%;
+				float: right;
+				box-sizing: border-box;
+			}
+
+			.left2 {
+				width: 50%;
+				height: 100%;
+				float: left;
+				box-sizing: border-box;
+				border-radius: 20px 0px 0px 20px;
+			}
+
+			.right2 {
+				position: relative;
+				overflow: hidden;
+				width: 50%;
+				height: 100%;
+				float: right;
+				box-sizing: border-box;
+				border-radius: 0px 20px 20px 0px;
+			}
+
+			#button1 {
+				color: #FFB02E;
+			}
+
+			.menu-active {
+				color: #FFB02E;
+			}
+
+			.contents {
+				width: 99%;
+				background-color: rgba(255, 176, 46, 0.1);
+				box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+				border-radius: 20px;
+				padding: 1% 1%;
+				box-sizing: border-box;
+			}
+
+			.box {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-align-items: center;
+				align-items: center;
+				position: relative;
+				width: 100%;
+				justify-content: space-between;
+			}
+
+			.box2 {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-align-items: center;
+				align-items: center;
+				position: relative;
+				width: 100%;
+				justify-content: space-between;
+				height: 200px;
+				border-radius: 20px;
+			}
+
+			hr {
+				border: 3px solid #F9F5EA;
+			}
+
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+
+			.dropbtn_icon {
+				font-family: 'Material Icons';
+				padding: 10px;
+				font-size: 13px;
+				vertical-align: middle;
+			}
+
+			.dropbtn {
+				border: none;
+				background-color: #FFB02E;
+				font-weight: bold;
+				color: rgb(37, 37, 37);
+				padding: 12px;
+				width: 140px;
+				text-align: left;
+				cursor: pointer;
+				font-size: 12px;
+			}
+
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				z-index: 1;
+				font-weight: 400;
+				background-color: #f9f9f9;
+				background-color: #ff6ea8;
+				background-color: rgba(247, 119, 170, 0.95);
+				min-width: 140px;
+				text-align: center;
+				border-radius: 15px;
+			}
+
+			.dropdown-content a {
+				display: block;
+				text-decoration: none;
+				color: rgb(37, 37, 37);
+				color: white;
+				font-size: 12px;
+				font-weight: bold;
+				padding: 12px 20px;
+			}
+
+			.dropdown-content a:hover {
+				background-color: #b37f29;
+				border-radius: 15px;
+			}
+
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+
+			.profile {
+				height: 30%;
+				width: 30%;
+				border-radius: 70%;
+				vertical-align: middle;
+			}
+		</style>
+
+	</script>
+</head>
+
+<body style="background-color: #F9F5EA;">
+	<header style="background-color: #FFB02E;">
+		<section class="section">
+			<br>
+			<table class="header">
+				<tr>
+					<td style="width: 17%;">
+						<a href="main.jsp">
+							<img src="img/logo.png" style="height: 50px">
+						</a>
+					</td>
+					<td style="width: 50%; align-items: stretch;">
+						<input class="input" type="text" name="search" placeholder="검색어를 입력하세요">
+						<input class="submit" type="submit" value="submit"></input>
+					</td>
+					<td style="width: 17%;"></td>
+					<td style="width: 8%;">
+						<button class="signUp" onclick="location.href='signUp.jsp'">Sign up</button>
+					</td>
+					<td style="width: 8%;">
+						<button class="signIn" onclick="location.href='signIn.jsp'">Sign in</button>
+					</td>
+					<div class="dropdown">
+						<button class="dropbtn">
+							<img class="profile" src="img/profile.png">
+							<span class="dropbtn_icon" value="userID">홍길동 님</span>
+						</button>
+						<div class="dropdown-content">
+							<a href="updatePro.jsp">회원정보변경</a>
+							<a href="requireList.html">요청목록</a>
+							<a href="logoutAction.jsp">로그아웃</a>
+						</div>
+					</div>
+				</tr>
+			</table>
+			<br>
+			<ul></ul>
+			<ul class="nav">
+				<div>
+					<li><a id="button1" href="#none" style="font-weight: 900;">업체예약</a></li>
+					<li><a id="button2" href="community.jsp" style="font-weight: 900;">커뮤니티</a></li>
+					<li><a id="button3" href="individualT.jsp" style="font-weight: 900;">위탁</a></li>
+					<li><a id="button4" href="Int.jsp" style="font-weight: 900;">회사소개</a></li>
+				</div>
+			</ul>
+		</section>
+	</header>
+	<br>
+	<br>
+	<br>
+	<article>
+		<section class="section">
+			<div style="display: flex;">
+				<div class="left">
+					<br>
+					<button type="button" class="menu-link" data-menu="1" onclick="location.href='#'"
+					id="btn1">미용</button><br><br>
+					<button type="button" class="menu-link" data-menu="2" onclick="location.href='#'"
+					id="btn1">운동장</button><br><br>
+					<button type="button" class="menu-link" data-menu="3" onclick="location.href='#'"
+					id="btn1">유치원</button><br><br>
+					<button type="button" class="menu-link" data-menu="4" onclick="location.href='#'"
+					id="btn1">병원</button><br><br>
+					<button type="button" class="menu-link" data-menu="5" onclick="location.href='#'"
+					id="btn1">펫푸드</button><br><br>
+					<button type="button" class="menu-link" data-menu="6" onclick="location.href='#none'"
+					id="btn1">호텔</button><br><br>
+					<button type="button" class="menu-link" data-menu="7" id="btn2">식당 및 카페</button><br><br><br>
+					<script>
+						var menuLinks = document.querySelectorAll('.menu-link');
+
+						function clickMenuHandler() {
+							for (var i = 0; i < menuLinks.length; i++) {
+								menuLinks[i].classList.remove('menu-link-active');
+							}
+							this.classList.add('menu-link-active');
+						}
+
+						for (var i = 0; i < menuLinks.length; i++) {
+							menuLinks[i].addEventListener('click', clickMenuHandler);
+						}
+					</script>
+				</div>
+				<div class="right" id="Btn1">
+					<div class="contents">
+						<div class="box" style="border-bottom: 2px solid #8a611e;">
+							<h1>&nbsp지역 선택</h1>
+							
+						</div>
+						<br>
+						<div>
+							<table class="region">
+								<tr>
+									<td width="40%"><label for="seoul"> 서울</label></td>
+									<td width="5%"><input type="radio" name="region" id="seoul" value="seoul" class="seoul"
+										checked></td>
+										<td width="10%"></td>
+										<td width="40%"><label for="busan"> 부산</label></td>
+										<td width="5%"><input type="radio" name="region" id="busan" value="busan" class="busan"></td>
+									</tr>
+									<tr>
+										<td><label for="daegu"> 대구</label></td>
+										<td width="5%"><input type="radio" name="region" id="daegu" value="daegu" class="daegu"></td>
+										<td></td>
+										<td><label for="daejeon"> 대전</label></td>
+										<td width="5%"><input type="radio" name="region" id="daejeon" value="daejeon"
+											class="daejeon">
+										</td>
+									</tr>
+									<tr>
+										<td><label for="gg"> 경기</label></td>
+										<td width="5%"><input type="radio" name="region" id="gg" value="gg" class="gg"></td>
+										<td></td>
+										<td><label for="gw"> 강원</label></td>
+										<td width="5%"><input type="radio" name="region" id="gw" value="gw" class="gw">
+										</td>
+									</tr>
+									<tr>
+										<td><label for="gs"> 경상</label></td>
+										<td width="5%"><input type="radio" name="region" id="gs" value="gs" class="gs"></td>
+										<td></td>
+										<td><label for="jl"> 전라</label></td>
+										<td width="5%"><input type="radio" name="region" id="jl" value="jl" class="jl">
+										</td>
+									</tr>
+									<tr>
+										<td><label for="cc"> 충청</label></td>
+										<td width="5%"><input type="radio" name="region" id="cc" value="cc" class="cc"></td>
+										<td></td>
+										<td><label for="jeju"> 제주</label></td>
+										<td width="5%"><input type="radio" name="region" id="jeju" value="jeju" class="jeju">
+										</td>
+									</tr>
+								</table>
+								<br>
+							</div>
+						</div>
+					</section>
+				</article>
+				<footer id="footer">
+					<div class="footer-main">
+						<div id="copyright">
+							<ul class="copyright-list">
+								<li>고객문의 <a href="mailto:cs@happypetppy.com">cs@happypetppy.com</a>
+								</li>
+								<li>제휴문의 <a href="mailto:contact@happypetppy.com">contact@happypetppy.com</a></li>
+							</ul>
+							<br>
+							<ul class="copyright-list">
+								<li>지역광고 <a href="mailto:ad@happypetppy.com">ad@happypetppy.com</a>
+								</li>
+								<li>PR문의 <a href="mailto:pr@happypetppy.com">pr@happypetppy.com</a>
+								</li>
+							</ul>
+							<br><br>
+							<ul class="copyright-list">
+								<li>
+									<address>경상북도 경산시 하양읍 하양로 13-13 (Happy Petppy)</address>
+								</li>
+							</ul>
+							<br><br>
+							<ul class="copyright-list">
+								<li>사업자 등록번호 : 001-002-0003</li>
+								<li>직업정보제공사업 신고번호 : J0000000000000</li>
+							</ul>
+							<div class="copyright-text">©Happy Petppy Inc.</div>
+						</div>
+					</div>
+				</footer>
+			</body>
+
+			</html>
