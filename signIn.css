@@ -256,7 +256,7 @@ body {
 
 /* 스크린 리더기가 읽어 줘야 하는데, 화면에서는 안 보일 때 사용 */
 
-#userID {
+#loginid {
   /* 아이디 선택자는 독자적이기 때문에 부모를 타고 작성하지 않아도 됨 */
   display: block;
   justify-content: center;
@@ -280,13 +280,13 @@ body {
   /* 사용자가 입력하는 value값 설정 */
 }
 
-#userID::placeholder {
+#loginid::placeholder {
   /* 예시 텍스트만 선택한 것 */
   color: #ccc;
   font-size: 13px;
 }
 
-#userPassword {
+#loginpass {
   display: block;
   width: 70%;
   height: 30px;
@@ -308,14 +308,14 @@ body {
   /* 사용자가 입력하는 value값 설정 */
 }
 
-#userPassword::placeholder {
+#loginpass::placeholder {
   /* 예시 텍스트만 선택한 것 */
   color: #ccc;
   font-size: 13px;
 }
 
-#userID:focus,
-#userPassword:focus {
+#loginid:focus,
+#loginpass:focus {
   /* 텍스트 상자에 초점을 받았을 때 */
   outline: none;
   /* 브라우저가 주는 초점 아웃라인 제거 */
@@ -340,13 +340,13 @@ body {
   left: -999em;
 }
 
-.loginbox .loginCheck {
+.loginbox .loginchk {
   float: left;
   /* 부모 영역의 왼쪽에 붙임 */
   padding-top: 2px;
 }
 
-.loginbox .loginCheck .circle {
+.loginbox .loginchk .circle {
   display: inline-block;
   /* 영역을 주기 위해 변경 */
   width: 17px;
@@ -358,7 +358,7 @@ body {
   cursor: pointer;
 }
 
-.loginbox .loginCheck input:checked + .circle {
+.loginbox .loginchk input:checked + .circle {
   /* 로그인박스의 로그인 체크가: 체크되면 + 바로 뒤에 있는 circle의 배경 이미지가 변경된다*/
   background-image: url(img/check_yellow.png);
 }

@@ -201,7 +201,6 @@ body {
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
 }
 
-
 .bigtitle {
   width: 300px;
   margin: 0 auto;
@@ -266,7 +265,6 @@ div.centered {
   /* 가운데 정렬 */
 }
 
-
 .sign_up fieldset {
   /* 필드셋에 적용할 스타일*/
   margin: 15px 10px;
@@ -306,8 +304,8 @@ select {
   /* option과 비슷한 목록이 꾸며진 경우는 html에서 div를 준 뒤 제이커리에서 적용한 경우임. */
 }
 
-.nicknameCheck,
-.userIDCheck {
+.nickname_chk,
+.id_chk {
   border: 1px solid;
   padding: 5px;
   border-radius: 5px;
@@ -317,8 +315,8 @@ select {
   cursor: pointer;
 }
 
-.nicknameCheck:hover,
-.userIDCheck:hover {
+.nickname_chk:hover,
+.id_chk:hover {
   background-color: #ffb02e;
   color: #f9f5ea;
 }
