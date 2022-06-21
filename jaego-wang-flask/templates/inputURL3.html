@@ -10,50 +10,44 @@
     <article>
         <ul class="icon">
             <div>
-               <li>
-                    <form action="/edit" method="POST">
-                        <input type="image" style="width: 25px;" src="{{url_for('static', filename='image/delete.png')}}" value="" name="">
-                    </form>
-                </li>
-                <li>
-                    <form action="/quit">
-                        <input type="image" src="{{url_for('static', filename='image/quitChat.png')}}" value="" name="">
-                    </form>
-                </li>
-                <li>
-                    <form action="/notifyer">
-                        <input type="image" src="{{url_for('static', filename='image/chat.png')}}" value="" name="">
-                    </form>
-                </li>
-            </div>
-        </ul><!--
-        <form id="option1" action="/info" method="POST" >
-            <input class="search" name="urlNike" type="text" placeholder="나이키 제품 URL을 입력하세요">&nbsp;
-            <input type ="submit" value="등록">
-            <div class="Cimg">
-                <span>{{parsed_page}}</span>
-            </div>
-        </form>-
-
-        <form id="option2" action="/info" method="POST" >
-            <input class="search" name="urlNewB" type="text" placeholder="뉴발런스 제품 URL을 입력하세요">&nbsp;
-            <input type ="submit" value="등록">
-            <div class="Cimg">
-                <span>{{parsed_page}}</span>
-            </div>
-        </form>-->
-        <form id="option3" action="/info3" method="POST" >
-            <input class="search" name="urlVans" type="text" placeholder="반스 제품 URL을 입력하세요">&nbsp;
-            <input type ="submit" value="등록">
-            <div class="Cimg">
-                <span>{{parsed_page['itemName']}}</span>
-                <span>{{parsed_page['itemImg']}}</span>
-                <span>{{parsed_page['itemStock']}}</span>
-                <span>{{parsed_page['itemCodyImgLst']}}</span>
-            </div>
-        </form>
-        <p>코디</p>
-
-    </article>
+             <li>
+                <form action="/edit" method="POST">
+                    <input type="image" style="width: 25px;" src="{{url_for('static', filename='image/delete.png')}}" value="" name="">
+                </form>
+            </li>
+            <li>
+                <form action="/quit">
+                    <input type="image" src="{{url_for('static', filename='image/quitChat.png')}}" value="" name="">
+                </form>
+            </li>
+            <li>
+                <form action="/notifyer">
+                    <input type="image" src="{{url_for('static', filename='image/chat.png')}}" value="" name="">
+                </form>
+            </li>
+        </div>
+    </ul>
+    <form id="option3" action="/info3" method="POST" >
+        <input class="search" name="urlVans" type="text" placeholder="반스 제품 URL을 입력하세요">&nbsp;
+        <input type ="submit" value="등록">
+        <div style="padding: 20px;">
+            <img style="width:350px; height: 250px;" src = "{{parsed_page['itemImg']}}" onError="this.style.visibility='hidden'">
+            <p>제품명 : {{parsed_page['itemName']}}</p>
+            <p>재고유무 : {{parsed_page['itemStock']}}</p>
+            <section>
+                <div>
+                    <p class="title">함께하면 좋은 상품 & 추천코디</p>
+                </div>
+                <div class="section">
+                    {% for image in parsed_page['itemCodyImgLst'] %}
+                    <span>
+                        <img class="Simg" src = "{{image}}">
+                    </span>
+                    {% endfor %}
+                </div>
+            </section>
+        </div>
+    </form>
+</article>
 </body>
 </html>
