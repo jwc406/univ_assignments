@@ -31,10 +31,16 @@
             <input class="search" name="urlNewB" type="text" placeholder="뉴발런스 제품 URL을 입력하세요">&nbsp;
             <input type ="submit" value="등록">
             <div class="Cimg">
-                <span>{{parsed_page['itemName']}}</span>
-                <span>{{parsed_page['itemImg']}}</span>
-                <span>{{parsed_page['itemStock']}}</span>
-                <span>{{parsed_page['itemCodyImgLst']}}</span>
+                <div>{{parsed_page['itemName']}}</div>
+                <img style="width:350px; height: 250px;" src = "{{parsed_page['itemImg']}}" onError="this.style.visibility='hidden'">
+                <div>{{parsed_page['itemStock']}}</div>
+                <div>
+                    {% for image in parsed_page['itemCodyImgLst'] %}
+                    <span>
+                        <img style="width:300; height: 300px;" src = "{{image}}">
+                    </span>
+                    {% endfor %}
+                </div>
             </div>
         </form>
     </article>
