@@ -27,4 +27,4 @@ class TelegramBot:
                 print("{} status is on Sale".format(e[0]))
                 self.bot.sendMessage(receiver_id, "{} status is on Sale".format(e[0]))
         print("message check")
-        time.sleep(3600)
+        time.sleep(3600 * 3)
