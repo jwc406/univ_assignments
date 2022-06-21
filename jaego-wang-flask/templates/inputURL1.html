@@ -4,45 +4,6 @@
         soldout product
     </title>
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/input.css')}}">
-    
-    <style type="text/css">
-        .Cimg {
-            height: 170px;
-            width: auto;
-        }
-
-        section {
-            margin-top: 50px;
-        }
-
-        .section {
-          width: 100%;
-          justify-content: space-between;
-      }
-
-      .title {
-        margin-right: 20%;
-        margin-left: 20%;
-        font-size: 15pt;
-        background: linear-gradient(to right, #368494 0%, #58bcd1 100%);
-        border-radius: 30px;
-        font-weight: bold;
-        color: white;
-    }
-
-    .Simg {
-        padding: 5px;
-        height: 150px;
-        width: auto;
-        padding: 5px;
-        transition: 0.5s;
-    }
-
-    .Simg:hover {
-        transform: scale(1.5);
-    }
-
-</style>
 
 </head>
 <script type="text/javascript">
@@ -100,6 +61,7 @@ $(document).ready(function () {
                     <p class="title">함께하면 좋은 상품 & 추천코디</p>
                 </div>
                 <div class="section">
+                    {% for image in parsed_page['itemCodyImgLst'] %}
                     <span>
                         <img class="Simg" src = "{{image}}">
                     </span>
