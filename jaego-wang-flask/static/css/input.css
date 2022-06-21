@@ -75,7 +75,38 @@ body {
          margin: 0px auto;
      }
 
-     .Cimg {
-        padding: 20px;
-        height: 100px;
+    .Cimg {
+            height: 170px;
+            width: auto;
+        }
+
+        section {
+            margin-top: 50px;
+        }
+
+        .section {
+          width: 100%;
+          justify-content: space-between;
+      }
+
+      .title {
+        margin-right: 20%;
+        margin-left: 20%;
+        font-size: 15pt;
+        background: linear-gradient(to right, #368494 0%, #58bcd1 100%);
+        border-radius: 30px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .Simg {
+        padding: 5px;
+        height: 150px;
+        width: auto;
+        padding: 5px;
+        transition: 0.5s;
+    }
+
+    .Simg:hover {
+        transform: scale(1.5);
     }
