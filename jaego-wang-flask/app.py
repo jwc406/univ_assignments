@@ -226,6 +226,7 @@ def notifyer():
     flag = True
     while flag:
         print(flag)
+        stockChecking(dataSet)
         bot.alarm(dataSet)
         time.sleep(5)
     return 'X'
