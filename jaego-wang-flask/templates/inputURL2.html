@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>
+        soldout product
+    </title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/input.css')}}">
+
+</head>
+<body>
+    <article>
+        <ul class="icon">
+            <div>
+               <li>
+                    <form action="/edit" method="POST">
+                        <input type="image" style="width: 25px;" src="{{url_for('static', filename='image/delete.png')}}" value="" name="">
+                    </form>
+                </li>
+                <li>
+                    <form action="/quit">
+                        <input type="image" src="{{url_for('static', filename='image/quitChat.png')}}" value="" name="">
+                    </form>
+                </li>
+                <li>
+                    <form action="/notifyer">
+                        <input type="image" src="{{url_for('static', filename='image/chat.png')}}" value="" name="">
+                    </form>
+                </li>
+            </div>
+        </ul>
+        <form id="option2" action="/info2" method="POST" >
+            <input class="search" name="urlNewB" type="text" placeholder="뉴발런스 제품 URL을 입력하세요">&nbsp;
+            <input type ="submit" value="등록">
+            <div class="Cimg">
+                <span>{{parsed_page['itemName']}}</span>
+                <span>{{parsed_page['itemImg']}}</span>
+                <span>{{parsed_page['itemStock']}}</span>
+                <span>{{parsed_page['itemCodyImgLst']}}</span>
+            </div>
+        </form>
+    </article>
+</body>
+</html>

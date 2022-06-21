@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/input.css')}}">
+</head>
+<body>
+    <article>
+        <form action="/main" method="POST">
+            {% for i in dataSet %}
+            <tr> 
+                {{ loop.index}}.
+                {{ i[0] }}
+                <label><input type="checkbox" name="checklist" value="{{i[0]}}"> </label><br>
+            </tr>    
+            {% endfor %}
+            <br>
+            <input type="submit" value="Delete">
+        </form>
+    </article>
+</body>
+</html>
