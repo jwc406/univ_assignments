@@ -119,7 +119,8 @@ def inputURL3_html():
 
 def make_url(search_term):
     base_url = 'https://www.styleshare.kr/search/result?keyword='
-    return base_url + search_term
+    style_tab = '&tab=style'
+    return base_url + search_term + style_tab
 
 def crawl_images(itemName):
     search_term = itemName
