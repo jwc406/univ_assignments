@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>재고왕_main</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+	<script type="text/javascript">
+		function option() {
+			var selectOption = document.getElementById("url");
+
+			selectOption = selectOption.options[selectOption.selectedIndex].value;
+			if (selectOption=='option1') {
+				location.href="/option1";
+			}
+			else if (selectOption=='option2') {
+				location.href="/option2";
+			}
+			else if (selectOption=='option3') {
+				location.href="/option3";
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	<span>&nbsp;재고왕&nbsp;</span>
+	<div class="center">
+		<select class="selectbox" name="url" id="url">
+			<option value="">사이트를 선택하세요.</option>
+			<option value="option1">Nike</option>
+			<option value="option2">New Balance</option>
+			<option value="option3">Vans</option>
+		</select>
+		<input class="submit" type="submit" value="SEARCH" onclick="option();">
+	</div>
+</body>
+</html>
