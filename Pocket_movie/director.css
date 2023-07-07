@@ -1,0 +1,52 @@
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+#bgStyle{
+    padding: 0 60px;
+    height: 100vh;
+    animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+    background-attachment: fixed;
+}
+
+.dName{
+    padding-top: 10px;
+    font-family: GmarketSansBold;
+    font-size: 55px;
+    text-align: right;
+    transform: skew(-10deg);
+}
+
+.movieList{
+    margin-bottom: 30px;
+    width: 100%; 
+    display: flex;
+}
+
+.mPoster{
+    margin-right:20px; 
+    flex:1;
+}
+
+.mEx{
+    width:100%; 
+    flex:1;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

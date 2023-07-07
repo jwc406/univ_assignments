@@ -1,0 +1,83 @@
+*{
+    font-family: NanumSquareRound;
+}
+
+#main{
+    padding:0 45px;
+}
+
+#page{
+    margin:0;
+    background: url("p.jpg") no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+#header{
+    background: transparent;
+    border-color: transparent;
+    color: white;
+    text-shadow: none;
+    font-size: 40px;
+    padding: 55px 0 15px 0; 
+}
+
+#title{
+    font-family: SDSamliphopangche_Basic;
+    font-size: larger;
+    font-weight: normal;
+    min-height: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+} 
+
+#list{
+    font-family: NanumSquareRound;
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    font-size: larger;
+}
+
+#nav{ 
+    padding-bottom: 2%;
+    font-family: NanumSquareRound;
+    height: 10%;
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'SDSamliphopangche_Basic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

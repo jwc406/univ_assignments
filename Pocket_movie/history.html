@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="common.css" rel="stylesheet" type="text/css">     
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css"/>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+  
+  </head> 
+  <body> 
+    <div data-role="page" id="page" data-theme="a" style="background: url(in.jpg); background-size:cover;">
+      <div data-role="header" data-position="fixed" id="header">
+          <h1 id="title">영화의 역사</h1>
+      </div>
+      <div data-role="main" class="ui-content" id="main">
+        <div data-role="collapsibleset" style="padding-top: 20px;">
+          <div data-role="collapsible" title-theme="none" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+            <h4>영화의 탄생</h4>
+            <p>조르주 멜리에스(Georges Melies, 1861∼1938)가 극영화의 기초를 다지고, 토머스 에디슨(Thomas Edison, 1847∼1931)을 돕고 있던 에드윈 포터(Edwin S. Poter)가 영화를 정리하고 발전시켰다. 그는 1903년 영화의 주류를 이루던 무대연극의 단순 촬영에서 벗어나 여러 장면을 나눠 촬영하고 편집하여 완성된 권선징악의 극영화 <대열차 강도>를 발표했다. 그 후 데이비드 워크 그리피스(David Wark Griffith) 감독이 극영화 형식을 완성시켰다.</p>
+          </div>
+          <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" >
+            <h4>무성영화 시대</h4>
+            <p>제1차 세계대전 중 비약적인 발전을 이룩한 미국 영화는 1920년에 들어서면서 황금시대를 구가하게 된다. 또 독일에서는 다양한 표현주의 영화가 제작되어 독일 영화가 질적으로 발전되면서 세계 속에 독일 영화의 존재를 확인하게 된다. 한때 부진했던 프랑스 영화는 아벨 강스(Abel Gance)의 <전쟁과 평화>, <철로의 백장미> 등을 통해 프랑스 영화의 건재함을 증명했다.</p>
+          </div>
+          <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+            <h4>유성영화 시대</h4>
+            <p><뉴욕의 등불>은 최초로 전편을 완전 녹음한 유성영화이다. 영화학자들은 유성영화가 영상 표현의 순수성을 잃는다는 이유로 반대도 했지만, 대중은 유성영화에 열광했다. 유성영화 시대는 ‘사운드’ 덕분에 관객이 희망하는 다양한 스토리를 만들 수 있었다. 스토리는 자연히 극적 구성을 기반으로 한다. 시각적인 문제보다는 주제와 인간의 극적 상황이 작품의 가치를 결정하는 것으로 발전하게 되었다.</p>
+          </div>
+          <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+            <h4>네오리얼리즘 시대</h4>
+            <p>네오리얼리즘의 특징은 카메라와 현실 세계의 직접적인 만남에서 시작되었다. 1930년대의 영화가 계산된 극적 스토리를 전달해 왔다면 네오리얼리즘은 ‘영상’의 리얼리티에서 출발했다. 카메라가 파괴된 로마의 비참한 현실 생활을 있는 그대로 꾸밈없이 그대로 보여 줄 때, 작가가 느낀 현실에 대한 정치적, 사상적 입장과 관련이 있는 것이었다. 작가들은 여러 대상을 보면서 그 대상들의 상호 관계를 이해하려고 하였다.</p>
+          </div>
+          <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+            <h4>뉴아메리칸 시네마의 시대</h4>
+            <p>뉴아메리칸 시네마는 1960년대 미국의 언더그라운드 또는 실험 영화 운동을 가리키는 용어다. 1960년대 독립 영화감독, 제작자들은 ‘아메리칸 뉴시네마 그룹’이라는 단체를 결성한다. 뉴아메리칸 시네마 감독들은 영화가 관객에게 자극과 문제의식을 주기를 바랐고, 이에 청소년 비행 문제, 마약 문제, 시민의 권리투쟁, 경찰의 잔학상과 편협성, 빈민가를 영화의 소재로 삼았고 미국 사회의 혼란상을 그대로 보여 주었다.</p>
+          </div>
+          <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+            <h4>디지털 영화 시대</h4>
+            <p>처음 컴퓨터 그래픽(CG)을 사용한 영화는 1982년의 〈트론(Tron)이다. 1980년대 말 이후부터 이런 영화들이 본격적으로 제작되기 시작하였는데, 디지털 영화의 발전은 당시 대중문화 영역 전반에서 나타난 컴퓨터 이미지의 활용 확대라는 관점에서 고찰할 수 있다. 그리고 특히 디지털 영화는 '사실주의(realism)'의 구현이라는 목표를 고도로 일관되게 추구해 왔다는 점에서 다른 대중문화 장르들과 구별될 수 있다.</p>
+          </div>
+        </div>
+      </div> 
+      <div data-role="footer" data-position="fixed" id="nav">
+        <div data-role="navbar" data-type="horizontal" style="text-align: center">
+          <ul>
+            <li><a href="http://www.cgv.co.kr/ticket/" data-icon="calendar" class="ui-nodisc-icon" id="nav">예매</a></li>
+            <li><a href="index.html" rel="external" data-icon="home" class="ui-nodisc-icon" id="nav">홈</a></li>
+            <li><a href="archives.html" rel="external" data-icon="edit" class="ui-nodisc-icon" id="nav">기록</a></li>
+          </ul>
+        </div>
+      </div>
+      </div> 
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="common.css" rel="stylesheet" type="text/css"> 
+    <link href="archives.css" rel="stylesheet" type="text/css"> 
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css"/>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script src="sweetalert.min.js"></script>
+  </head> 
+  <body onload="init();"> 
+    <div data-role="page" id="page" data-theme="a" style="background: url(in.jpg); background-size:cover;">
+      <div data-role="header" data-position="fixed" id="header">
+          <h1 id="title">My Archives</h1>
+      </div>
+      <div data-role="main" id="arc_main">
+          <h3 style="text-align: center; padding-bottom: 10px;">내가 본 영화를 기록해보세요!</h3>
+          <form type="post" onsubmit="add(); return false;" style="text-align: center;">
+            본 날짜<input type="date" id="mdate" name="mdate" placeholder="년-월-일" data-inline="true" >
+            영화 제목<input type="text" id="mname" name="mname" placeholder="영화 제목">
+            내 평점<input type="text" id="mrate" name="mrate" placeholder="0.0 - 5.0"><br>
+            <input type="submit" value="기록하기" data-inline="true"/>  
+            <a data-role="button" href="#list" data-inline="true">기록 보기</a>
+          </form>
+      </div>
+      <div data-role="footer" data-position="fixed" id="nav">
+        <div data-role="navbar" data-type="horizontal" style="text-align: center">
+          <ul>
+            <li><a href="http://www.cgv.co.kr/ticket/" data-icon="calendar" class="ui-nodisc-icon" id="nav">예매</a></li>
+            <li><a href="index.html" rel="external" data-icon="home" class="ui-nodisc-icon" id="nav">홈</a></li>
+            <li><a href="archives.html" rel="external" data-icon="edit" class="ui-nodisc-icon" id="nav">기록</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+
+    <div data-role="page" id="list" style="background: url(in.jpg); background-size:cover;">
+      <div data-role="main" class="ui-content">
+        <div data-role="header" data-position="fixed" id="header">
+        <a id="backBtn" onclick="history.back()"><img src="back.png" width="40px;" height="30px;"></a>
+        <h1 id="title">나의 기록</h1>
+      </div>
+      <div data-role="main">
+         <ul id="MyRecordItems">
+         </ul>
+      </div>
+      <div data-role="footer" data-position="fixed" id="nav">
+        <form type="post" onsubmit="deleteAll(); return false;" style="display:flex; justify-content: center;">
+          <input type="submit" value="모든 기록 삭제"/>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="archives.js"></script> 
+  </body>
+</html>

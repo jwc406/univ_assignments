@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="common.css" rel="stylesheet" type="text/css"> 
+    <link href="category.css" rel="stylesheet" type="text/css">    
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css"/>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="lightbox.min.css">    
+    <script src="lightbox.min.js"></script>      
+  </head> 
+  <body> 
+    <div data-role="page" id="page" data-theme="b" style="background: url(in.jpg); background-size:cover;">
+      <div data-role="header" data-position="fixed" id="header">
+          <h1 id="title">장르별 추천 영화</h1>
+      </div>
+      <div data-role="main" id="categories">
+        <div class="container">
+            <a href="cat_rom1.jpeg" data-lightbox="example-set_rom"><img class="img" src="romance.png"></a>
+            <a style="display:none;" href="cat_rom2.jpeg" data-lightbox="example-set_rom"></a> 
+            <a style="display:none;" href="cat_rom3.jpeg" data-lightbox="example-set_rom"></a> 
+            <a style="display:none;" href="cat_rom4.jpeg" data-lightbox="example-set_rom"></a> 
+            <a style="display:none;" href="cat_rom5.jpeg" data-lightbox="example-set_rom"></a>
+            <a style="display:none;" href="cat_rom6.jpeg" data-lightbox="example-set_rom"></a>  
+            <div class="text">로맨스</div>
+        </div>
+        <div class="container">
+          <a href="cat_act1.jpg" data-lightbox="example-set_act"><img class="img" src="action.png"></a>
+          <a style="display:none;" href="cat_act2.jpg" data-lightbox="example-set_act"></a> 
+          <a style="display:none;" href="cat_act3.jpg" data-lightbox="example-set_act"></a> 
+          <a style="display:none;" href="cat_act4.jpg" data-lightbox="example-set_act"></a> 
+          <a style="display:none;" href="cat_act5.jpg" data-lightbox="example-set_act"></a> 
+          <div class="text">액션</div>
+        </div>
+        <div class="container">
+          <a href="cat_noir1.jpeg" data-lightbox="example-set_noir"><img class="img" src="noir.png"></a>
+          <a style="display:none;" href="cat_noir2.jpeg" data-lightbox="example-set_noir"></a> 
+          <a style="display:none;" href="cat_noir3.jpeg" data-lightbox="example-set_noir"></a> 
+          <a style="display:none;" href="cat_noir4.jpeg" data-lightbox="example-set_noir"></a> 
+            <div class="text">느와르</div>
+        </div>
+        <div class="container">
+          <a href="cat_hor1.jpeg" data-lightbox="example-set_hor"><img class="img" src="horror.png"></a>
+          <a style="display:none;" href="cat_hor2.jpeg" data-lightbox="example-set_hor"></a> 
+          <a style="display:none;" href="cat_hor3.jpeg" data-lightbox="example-set_hor"></a> 
+          <a style="display:none;" href="cat_hor4.jpeg" data-lightbox="example-set_hor"></a> 
+            <div class="text">공포</div>
+        </div>
+        <div class="container">
+          <a href="cat_fan1.jpeg" data-lightbox="example-set_fan"><img class="img" src="fantasy.png"></a>
+          <a style="display:none;" href="cat_fan2.jpeg" data-lightbox="example-set_fan"></a> 
+          <a style="display:none;" href="cat_fan3.jpeg" data-lightbox="example-set_fan"></a> 
+          <a style="display:none;" href="cat_fan4.jpeg" data-lightbox="example-set_fan"></a> 
+            <div class="text">판타지</div>
+        </div>
+        <div class="container">
+          <a href="cat_ani1.jpeg" data-lightbox="example-set_ani"><img class="img" src="animation.png"></a>
+          <a style="display:none;" href="cat_ani2.jpeg" data-lightbox="example-set_ani"></a> 
+          <a style="display:none;" href="cat_ani3.jpeg" data-lightbox="example-set_ani"></a> 
+          <a style="display:none;" href="cat_ani4.jpeg" data-lightbox="example-set_ani"></a> 
+            <div class="text">애니</div>
+        </div>
+      </div>
+      <div data-role="footer" data-position="fixed" id="nav">
+        <div data-role="navbar" data-type="horizontal" style="text-align: center">
+          <ul>
+            <li><a href="http://www.cgv.co.kr/ticket/" data-icon="calendar" class="ui-nodisc-icon" id="nav">예매</a></li>
+            <li><a href="index.html" rel="external" data-icon="home" class="ui-nodisc-icon" id="nav">홈</a></li>
+            <li><a href="archives.html" rel="external" data-icon="edit" class="ui-nodisc-icon" id="nav">기록</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+  </body>
+</html>
